@@ -6,6 +6,12 @@ class ArticlesController < ApplicationController
     @article = Article.new(params[:article])
 
     @article.save
-    redirect_to @article
+    redirect_to @artile
+  end
+
+  def private
+    def article_params
+      params.require(:article).permit(:title, :text)
+    end
   end
 end
