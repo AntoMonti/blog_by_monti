@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :articles do
     resources :comments
   end
+
+  resource :contacts, only: [:new, :create]
   
   root 'welcome#index'
 
