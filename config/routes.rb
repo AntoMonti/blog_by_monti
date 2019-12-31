@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  get 'home' => 'pages#home'
+  get 'about' => 'pages#about'
 
   resources :articles do
     resources :comments
