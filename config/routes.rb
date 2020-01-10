@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  resource :contacts, only: [:new, :create]
+  resource :contacts, only: [:new, :create], path_names: { :new => '' }
   
   root 'welcome#index'
 
