@@ -1,1 +1,89 @@
-<h1>Thanks!</h1>
+<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <%= link_to "Anto Monti Official", "http://antomonti.com/", class: "navbar-brand" %>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <%= link_to "Create Article", new_article_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "About", about_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Articles", articles_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Contact", new_contacts_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(<%= image_path "contact-bg.jpg" %>)">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Thanks the message!</h1>
+            <span class="subheading">Wait for the response. It`s will be shortly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content -->  
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Et malesuada fames ac turpis. Nibh tellus molestie nunc non blandit massa enim nec. Egestas congue quisque egestas diam. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis.</p> 
+          <p>Curabitur gravida arcu ac tortor dignissim. Eget est lorem ipsum dolor sit amet consectetur adipiscing elit. Elit sed vulputate mi sit amet mauris commodo quis. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Senectus et netus et malesuada fames.</p>
+          <p> Mauris cursus mattis molestie a iaculis at erat. Morbi tristique senectus et netus. A pellentesque sit amet porttitor. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Vitae auctor eu augue ut lectus arcu bibendum at. In fermentum posuere urna nec tincidunt.</p>
+        </div>
+      </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
