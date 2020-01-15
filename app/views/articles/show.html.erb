@@ -35,7 +35,7 @@
             <h1><%= @article.title %></h1>
             <h2 class="subheading"><%= @article.subtitle %></h2>
             <span class="meta">Posted by
-              <a href="#">Anto Monti</a>
+              <%= link_to "Anto Monti", "http://antomonti.com/" %>
               <%= @article.created_at.strftime("%b %d, %Y") %></span>
           </div>
         </div>
